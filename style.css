@@ -25,4 +25,27 @@ form{
     margin-top: 20%;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: lightblue;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+.newbookform input{
+    border-radius: 5px;
+    border: none;
+    height: 2em;
+    margin: 2%;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+label,.addtitle{
+    margin: 2%; 
+}
+.yesno{
+   align-content: center;
+}
+.yesno label{
+    margin: auto;
+}
+.yesno input{
+    height: 1em;
 }
