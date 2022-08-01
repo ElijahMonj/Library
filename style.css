@@ -49,3 +49,9 @@ label,.addtitle{
 .yesno input{
     height: 1em;
 }
+#errorMessage{
+    font-size: .6em;
+    margin: 5px;
+    align-self: center;
+    color: red;
+}

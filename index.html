@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
     <div class="container">
         <div class="header">header</div>
         <div class="form-container">
-            <form action="#" class="newbookform">
+            <form action="#"class="newbookform" id="newbookform" >
                 <div class="addtitle"><b>Add new book to library.</b></div>
                 <label for="booktitle">Title of the Book:</label>
                 <input type="text" id="booktitle" required>
@@ -21,13 +22,13 @@
                 <input type="number" id="bookpages" min="1" required>
                 <label for="bookstatus">Have you read it?</label>
                     <div class="yesno">
-                        <input type="radio" id="yes" name="yesno">
+                        <input type="radio" id="yes" name="yesno"value="yes" checked>
                         <label for="yes">Yes</label>
-                        <input type="radio"id="no" name="yesno">
+                        <input type="radio"id="no" name="yesno"value="no">
                         <label for="no">No</label>
                     </div>
-                
-                <input type="submit" name="" value="Add Book">
+                <input type="button" name="" value="Add Book" onclick="addBookToLibrary()">
+                <p id="errorMessage"></p>
             </form>
         </div>
         <div class="book-container">
