@@ -34,7 +34,7 @@ form{
     font-size: 1.2em;
   
 }
-.newbookform input{
+.newbookform input, button{
     border-radius: 5px;
     border: none;
     height: 2em;
@@ -96,6 +96,16 @@ label,.addtitle{
     padding: 0px;
     border-radius: 5px;
 }
+button{
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+button:hover{
+background-color: #1C4D90;
+}
+
 
 /* ---credits---- */
 .copyrights{
